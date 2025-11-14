@@ -14,3 +14,13 @@ datagroup: demo_model_default_datagroup {
 
 persist_with: demo_model_default_datagroup
 
+explore: customers {}
+
+explore: orders {
+
+  join: customers {
+    sql_on: ${orders.customer_id} = ${customers.customer_id} ;;
+    relationship: many_to_one
+  }
+
+}

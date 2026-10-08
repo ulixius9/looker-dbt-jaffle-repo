@@ -15,7 +15,7 @@ datagroup: demo_model_default_datagroup {
 persist_with: demo_model_default_datagroup
 
 explore: customers {
-  tags: ["TagA"]
+  tags: ["TagA", "TagB"]
 }
 
 explore: orders {
